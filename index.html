@@ -1,11 +1,384 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+        integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
+
 <body>
-    
+    <header id="header">
+        <div class="header-top">
+            <div class="container">
+               <div class="wrap d-flex align-items-center justify-content-between">
+
+                    <div class="logo">
+                        <a href="#">
+                            <img src="/imgaes/xchop-logo.png" alt="logo">
+                        </a>
+                    </div>
+
+                    <div class="social-action">
+                        <div class="social-details">
+                            <ul class="d-flex justify-content-between align-items-center">
+                                <li><a href="#"><span><i class="fa-solid fa-location-dot"></i></span>Locations</a></li>
+                                <li><a href="#"><span><i class="fa-solid fa-phone"></i></span>(732) 659-4364</a></li>
+                                <li><a href="#"><span><i class="fa-solid fa-user"></i></span>PARENT PORTAL</a></li>
+                            </ul>
+                        </div>
+                        <div class="get-assessment text-right">
+                            <a href="#" class="btn">Get you child's free assessment</a>
+                        </div>
+                    </div>
+
+                    <div class="mobile-menu-toggel d-lg-none">
+						<button type="button" class="menu-open-icon" onclick="openToggle()">
+							<span class="open"><i class="fa-solid fa-bars"></i></span>
+						</button>
+		
+						<button type="button" class="menu-close-icon" onclick="closeToggle()">
+							<span class="open"><i class="fa-solid fa-xmark"></i></span>
+						</button>
+					</div>
+               </div>
+            </div>
+        </div>
+        
+        <div class="header-bottom d-flex justify-content-between align-items-center">
+            <div class="container">
+                <div class="wrap d-flex align-items-center justify-content-between">
+                    <nav>
+                        <ul class="d-flex justify-content-between align-items-center">
+                            <li class="active"><a href="#">math</a></li>
+                            <li class="sub-menu-list">
+                                <a href="#">reading writing <span><i class="fa-solid fa-angle-down"></i></span></a>
+                                <ul class="sub-menu">
+                                    <li><a href="#">sub menu 1</a></li>
+                                    <li><a href="#">sub menu 2</a></li>
+                                    <li><a href="#">sub menu 3</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">code</a></li>
+                            <li><a href="#">free lessons</a></li>
+                            <li><a href="#">success stories</a></li>
+                            <li><a href="#">about us</a></li>
+                        </ul>
+                    </nav>
+                    <div class="search">
+                        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <section class="banner">
+        <div class="container">
+            <div class="breadcumb">
+                <ul class="d-flex align-items-center ">
+                    <li><a href="#">Home <span><i class="fa-solid fa-angle-right"></i></span></a></li>
+                    <li><a href="#">Math Tutoring</a></li>
+                </ul>
+            </div>
+            <div class="wrap">
+                <h1>
+                    Expert Math Tutoring in <br> New Jersey
+                </h1>
+
+                <p>
+                    Abacus and School Math Programs <br>for Kids
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+     
+<!-- section 2 starts from here -->
+<section class="section-2 py-5">
+    <div class="container">
+        <!-- Section Title and Description -->
+        <div class="section-2-content text-center mb-5">
+            <h1 class="text-primary">How Does Xchop Work?</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+
+        <!-- Desktop View (Hidden on Mobile) -->
+        <div class="row d-none d-md-flex">
+            <div class="col-md-3 text-center mb-4">
+                <div class="img-div">
+                    <img src="imgaes/section-2/img-1.png" alt="Book a Free Assessment" class="img-fluid mb-3">
+                    <h5>Book a Free Assessment</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do et dolore magna aliqua.</p>
+                </div>
+            </div>
+            <div class="col-md-3 text-center mb-4">
+                <div class="img-div">
+                    <img src="imgaes/section-2/img-2.png" alt="Enjoy your first lesson" class="img-fluid mb-3">
+                    <h5>Enjoy your first lesson</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do et dolore magna aliqua.</p>
+                </div>
+            </div>
+            <div class="col-md-3 text-center mb-4">
+                <div class="img-div">
+                    <img src="imgaes/section-2/img-3.png" alt="Provide your child’s details" class="img-fluid mb-3">
+                    <h5>Provide your child’s details</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do et dolore magna aliqua.</p>
+                </div>
+            </div>
+            <div class="col-md-3 text-center mb-4">
+                <div class="img-div">
+                    <img src="imgaes/section-2/img-4.png" alt="Keep on Learning with Us" class="img-fluid mb-3">
+                    <h5>Keep on Learning with Us</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do et dolore magna aliqua.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile View Carousel (Visible on Mobile) -->
+        <div id="sectionCarousel" class="carousel slide d-md-none" data-bs-ride="carousel">
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <div class="text-center slide-op">
+                        <img src="imgaes/section-2/img-1.png" alt="Book a Free Assessment" class="img-fluid mb-3">
+                        <h5>Book a Free Assessment</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do et dolore magna aliqua.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="text-center slide-op">
+                        <img src="imgaes/section-2/img-2.png" alt="Enjoy your first lesson" class="img-fluid mb-3">
+                        <h5>Enjoy your first lesson</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do et dolore magna aliqua.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="text-center slide-op">
+                        <img src="imgaes/section-2/img-3.png" alt="Provide your child’s details" class="img-fluid mb-3">
+                        <h5>Provide your child’s details</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do et dolore magna aliqua.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="text-center slide-op">
+                        <img src="imgaes/section-2/img-4.png" alt="Keep on Learning with Us" class="img-fluid mb-3">
+                        <h5>Keep on Learning with Us</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do et dolore magna aliqua.</p>
+                    </div>
+                </div>
+
+            </div>
+            <a class="carousel-control-prev" href="#sectionCarousel" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#sectionCarousel" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- section 3 starts here -->
+    <section class="section-3 py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-5">
+                    <div class="section-3-content">
+                        <h2 class="sec-3-heading">Meet Our Team</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley of type and scrambled it to make a type specimen book. It has survived not only five
+                            centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                        </p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
+                        <button type="button" class="btn sec-3-btn d-none d-md-block">Get Your Free Child Assessment</button>
+
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-7 d-none d-md-block">
+                    <div class="row sec-3-img-row">
+                        <div class="col-12 col-md-4 col-lg-4">
+                            <div class="section-3-img-div">
+                                <img src="imgaes/section-3/img-1.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-4">
+                            <div class="section-3-img-div">
+                                <img src="imgaes/section-3/img-2.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-4">
+                            <div class="section-3-img-div">
+                                <img src="imgaes/section-3/img-3.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-4">
+                            <div class="section-3-img-div">
+                                <img src="imgaes/section-3/img-4.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-4">
+                            <div class="section-3-img-div">
+                                <img src="imgaes/section-3/img-5.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-4">
+                            <div class="section-3-img-div">
+                                <img src="imgaes/section-3/img-6.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-4">
+                            <div class="section-3-img-div">
+                                <img src="imgaes/section-3/img-7.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-4">
+                            <div class="section-3-img-div">
+                                <img src="imgaes/section-3/img-8.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-4">
+                            <div class="section-3-img-div">
+                                <img src="imgaes/section-3/img-9.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile Carousel -->
+                <div id="carouselExampleCaptions" class="carousel slide d-block d-md-none" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imgaes/section-3/img-1.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Image 1 Caption</h5>
+                                <p>Description for image 1.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imgaes/section-3/img-2.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Image 2 Caption</h5>
+                                <p>Description for image 2.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imgaes/section-3/img-3.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Image 3 Caption</h5>
+                                <p>Description for image 3.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="py-5">
+        <div class="container">
+            <div class="row about-us-sec">
+                <div class="col-md-4 about-us">
+                    <ul class="footer-ul">
+                        <h5>About Us</h5>
+                        <li><a href="#">Our Core Values</a></li>
+                        <li><a href="#">Our History</a></li>
+                        <li><a href="#">Success Stories</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 works">
+                    <ul class="footer-ul">
+                        <h5>How It Works</h5>
+                        <li><a href="#">Overview</a></li>
+                        <li><a href="#">Our Philosophy</a></li>
+                        <li><a href="#">Benefits of Xchop</a></li>
+                    </ul>
+
+                    <ul class="footer-ul mt-4">
+                        <h5>RESOURCES</h5>
+                        <li><a href="#">Faq</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Parent Portal</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                    </ul>
+                       
+                </div>
+                <div class="col-md-4">
+                    <ul class="footer-ul">
+                        <h5>Why Choose Xchop?</h5>
+                        <li><a href="#"> Whole Brain Program</a></li>
+                        <li><a href="#"> Visualization</a></li>
+                        <li><a href="#"> Small Class Sizes</a></li>
+                        <li><a href="#"> Cutting Edge Coursework</a></li>
+                        <li><a href="#"> Learning Strategy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="social-links">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="icon-ul">
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="copy-right">
+                            Copyright © 2023. Prosperity Associates Inc. All rights reserved.*The success stories on our
+                            website show real Xchop students who have achieved various academic results. Your child's
+                            individual results and duration to achieve them will vary. Results are not guaranteed and should
+                            not be viewed as typical.
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
